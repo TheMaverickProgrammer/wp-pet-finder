@@ -11,15 +11,21 @@ A new panel will be added to your administrative sidebar for PetFinder.
 # WordPress Shortcodes
 This plugin generates two new available shortcodes you can use in your page content editor.
 
+```
 'petfinder-display-pets' 
+```
+
   Display all the pets onto the page
   
+```
 'petfinder-update-pets'
+```
+
   Force the plugin to update the locale database
 
-
 # Plugin API
-``php
+
+```
 /**
  * checks configuration and returns if plugin is configured
  *
@@ -82,4 +88,4 @@ public function installPlugin()
  * Delete plugin options in WP ad drop a table database
  */
 public function uninstallPlugin()
-``
+```
