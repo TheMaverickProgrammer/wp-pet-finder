@@ -3,25 +3,35 @@ WordPress plugin that makes a local copy of the pet finder database,
 using the PetFinder API, for your local website.
 
 # How to use
-Place the plugin into your WordPress theme's plugin directory. 
+Place the plugin into your WordPress theme's plugin directory.
 In your adminstrative panel, select the PetFinder Plugin option and install it onto your theme.
-A new panel will be added to your administrative sidebar for PetFinder. 
+A new panel will be added to your administrative sidebar for PetFinder.
 **You will need an area code for the plugin to work.**
+
+
+An **API KEY**, **API SECRET**, and **SHELTER ID** are **REQUIRED** for the plugin to work.
+To get these, you must register on the Pet Finder’s [developers portal](https://www.petfinder.com/developers/api-docs).
 
 # WordPress Shortcodes
 This plugin generates two new available shortcodes you can use in your page content editor.
 
 ```
-'petfinder-display-pets' 
+'petfinder-display-pets (animal=<DOG|CAT>) (count=<any number>)'
 ```
 
-  Display all the pets onto the page
-  
+  Display all the pets onto the page. **_animal_ and _count_ are optional parameters.**
+
 ```
 'petfinder-update-pets'
 ```
 
   Force the plugin to update the locale database
+
+# Shortcode Example
+
+```
+petfinder-dipsplay-pets animal=DOG count=400
+```
 
 # Plugin API
 
@@ -83,7 +93,7 @@ public function getCats()
  */
 
 public function installPlugin()
-    
+
 /*
  * Delete plugin options in WP ad drop a table database
  */
