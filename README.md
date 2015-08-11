@@ -6,7 +6,6 @@ using the PetFinder API, for your local website.
 Place the plugin into your WordPress theme's plugin directory.
 In your adminstrative panel, select the PetFinder Plugin option and install it onto your theme.
 A new panel will be added to your administrative sidebar for PetFinder.
-**You will need an area code for the plugin to work.**
 
 
 An **API KEY**, **API SECRET**, and **SHELTER ID** are **REQUIRED** for the plugin to work.
