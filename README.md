@@ -25,7 +25,7 @@ This plugin generates two new available shortcodes you can use in your page cont
 
 # Plugin API
 
-```
+```php
 /**
  * checks configuration and returns if plugin is configured
  *
